@@ -13,28 +13,27 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, id: :event_name %>
   </div>
 
   <div class="field">
     <%= form.label :start_date %>
-    <%= form.datetime_select :start_date %>
+    <%= form.datetime_select :start_date, id: :event_start_date %>
   </div>
 
-   <div class="field">
+  <div class="field">
     <%= form.label :end_date %>
-    <%= form.datetime_select :end_date %>
+    <%= form.datetime_select :end_date, id: :event_end_date %>
   </div>
 
   <div class="field">
     <%= form.label :max_students %>
-    <%= form.number_field :max_students %>
+    <%= form.number_field :max_students, id: :event_max_students %>
   </div>
 
-  
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, id: :event_description %>
   </div>
 
   <div class="actions">
